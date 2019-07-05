@@ -1,0 +1,60 @@
+@keyframes answerAnim {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: auto;
+  }
+}
+
+.signup2 {
+  background-color: rgb(250, 245, 239);
+}
+
+.faqs {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.faqs .faq {
+  background: white;
+  margin-bottom: 20px;
+  color: rgb(32, 69, 138);
+  padding: 5px 10px;
+  border: 1px solid rgb(223, 223, 240);
+  border-radius: 3px;
+}
+
+.faq .question {
+  position: relative;
+  padding-right: 120px;
+}
+
+.faq .question::after {
+  content: 'Answer';
+  position: absolute;
+  background: rgb(63, 199, 136);
+  top: 0;
+  right: 20px;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.faq .answer {
+  display: none;
+  border-top: 1px solid green;
+  animation: 500ms answerAnim;
+}
+
+.Faq-title2 {
+  color: rgb(32, 69, 138);
+  margin-bottom: 40px;
+}
+
+.back-to-top {
+  color: #348681;
+}
